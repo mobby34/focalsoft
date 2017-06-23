@@ -1,0 +1,21 @@
+Options +FollowSymlinks
+
+# Turn Rewrite Engine On
+RewriteEngine on
+
+# Add www
+
+# Rewrite urls
+RewriteRule ^planner/([^/]*) planner.php?service=$1 [NC,L]
+RewriteRule ^division/([^/]*) division.php?div=$1 [NC,L]
+RewriteRule ^our-work/([^/]*) our-work.php?q=$1 [NC,L]
+RewriteRule ^purchase/([^/]*)/([^/]*) purchase.php?price=$1&package=$2 [NC,L]
+RewriteRule ^project/([^/]*) project.php?id=$1 [NC,L]
+RewriteRule ^services/([^/]*)/([^/]*) services.php?category=$1&service=$2 [NC,L]
+RewriteRule ^division/([^/]*) focalbase.php?d=$1 [NC,L]
+RewriteRule ^product/([^/]*)/([^/]*) focalproduct.php?div=$1&p=$2 [NC,L]
+
+# Remove extentions ".php"
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteCond %{REQUEST_URI} !/$
+RewriteRule (.*) $1\.php [L]

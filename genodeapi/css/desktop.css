@@ -1,0 +1,220 @@
+@media screen and (min-width: 690px){
+	/* Mobile Button */
+	.ui-mobile-menu-button {
+		display: none;
+	}
+
+	/* Page Styling */ 
+	#page{
+
+	}
+		/* First-generation div */
+		#page > div{
+			float: left;
+		}
+
+		/* Side Menu */
+		#page > #side-menu-section{
+			display: block;
+			position: fixed;
+			color: #fff;
+			width: 25%;
+			min-width: 100px;
+			height: 100%;
+			background: #0a162f;
+		}
+			/* title */
+			#page > #side-menu-section > .title{
+			    text-align: left;
+			    padding: 6% 3%;
+			    color: #829bd0;
+			    background: #1e489c;
+			}
+			
+			/* menu list */
+			#page > #side-menu-section > .list{
+				position: absolute;
+				overflow-y: scroll;
+				overflow-x: hidden;
+				text-align: left;
+				width: 100%;
+				height: 95%;
+			}	
+				/* restyling the side menu */
+				#page > #side-menu-section > .list li{
+					float: none;
+					color: #fff;
+					padding: 15px 10px;
+				}
+					/* first-generation type */
+					#page > #side-menu-section > .list li > div{	
+						float: left;
+					}
+					
+					#page > #side-menu-section > .list li a{	
+						color: #fff;
+					}
+
+					#page > #side-menu-section > .list li a:hover{
+						color: #fff;
+					}
+
+					/* parent type */
+					#page > #side-menu-section > .list li > .parent{
+						padding: 2px 5px;
+						width: 10px;
+						text-align: center;
+						font-size: 80%;
+						color: #fff;
+						background: #8a8787;
+						margin: 0 10px 0 -10px;
+						border-radius: 2px;
+					}
+					
+					/* Active Tab */
+					#page > #side-menu-section > .list li > .parent.active{
+						background: #23b35e;
+					}
+
+					#page > #side-menu-section > .list li > .parent.fparent{
+						margin-left: 1px;
+					}
+
+					#page > #side-menu-section > .list li > span:hover,
+					#page > #side-menu-section > .list li  > ul > li.active-tab .node-child{
+						padding: 7px;
+						color: #fff;
+						background: #2352b3;
+						border-radius: 4px;
+					}
+
+					/* Node*/
+					#page > #side-menu-section .node{
+						position: relative;
+						width: 93%;
+					}
+						#page > #side-menu-section .node-child{
+							color: #bfc2c7;
+						}
+
+						/* function count */
+						#page > #side-menu-section .fn-count{
+							position: absolute;
+							top: 15px;
+							right: 10px;
+							width: 22px;
+							height: 19px;
+							padding-top: 3px;
+							text-align: center;
+							font: 73% Roboto Bold;
+							color: #000;
+							background: #fff;
+						}
+					
+					/* drop down */
+					#page > #side-menu-section > .list li  > ul{
+						position: static;
+						display: block;
+						margin: 30px 0 -10px 32px;
+						border-left: 1px solid #d0d0d0;
+					}
+						#page > #side-menu-section > .list li  > ul > li{
+							width: 120%;
+							border: 0;
+							padding: 10px 0;
+							background: transparent;
+						}
+
+						#page > #side-menu-section > .list li  > ul > li.active-tab{
+						
+						}
+	
+						#page > #side-menu-section > .list li  > ul > li:first-child{
+							margin-top: 2px;
+						}
+							/* marker */
+							#page > #side-menu-section > .list li  > ul > li > .marker{
+
+							}
+								/* marker first-generation div*/
+								#page > #side-menu-section > .list li  > ul > li > .marker > div{
+									float: left;
+									margin-top: 7px;
+								}
+								
+								/* cirlce */
+								#page > #side-menu-section > .list li  > ul > li > .marker > .circle{
+									width: 8px;
+									height: 8px;
+									margin-left: -4px;
+									background: #fff;
+									display: none;
+								}
+								
+								/* line */
+								#page > #side-menu-section > .list li  > ul > li > .marker > .line{
+									width: 20px;
+									height: 1px;
+									margin-top: 11px;
+									margin-right: 8px;
+									background: #c3c3c3;
+								}
+
+		/* Content Section */
+		#page > #main-section{
+			float: right;
+			width: 75%;
+		}
+			/* Top bar */
+			#page > #main-section > .top-bar{
+
+			}
+				/* Mobile Label */
+				#page > #main-section > .top-bar .mobile-label{
+					display: none;
+				}
+
+				/* path */
+				#page > #main-section > .top-bar > .path{
+					display: block;
+					float: left;
+					color: #fff;
+				}
+
+				#page > #main-section > .top-bar > .path:last-child{
+					padding: 1.5% 20px;
+					margin: none;
+				}
+
+				/* function */
+				#page > #main-section > .top-bar > .path.function{
+					min-width: 70px;
+					padding: 17px 10px;
+					font-family: Courier;
+				}
+
+				/* active */
+				#page > #main-section > .top-bar > .path.active{
+					
+				}
+					#page > #main-section > .top-bar > .path.active a{
+						color: #fff;
+					}
+
+			/* Content */
+			#page > #main-section > .content{
+				padding: 9% 2.5% 2.5%;
+			}
+				#page > #main-section #text-div .description{
+					width: 62%;
+				}
+
+			/* Text Section */
+			#text-div{
+				
+			}
+				/* First generation div */
+				#text-div > div{
+					margin-bottom: 20px;
+				}
+	}

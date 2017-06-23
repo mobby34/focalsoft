@@ -1,0 +1,474 @@
+@media screen and (min-width: 690px) {
+    body {
+        font: 120% Roboto, Calibri, Arial, Sans-serif
+    }
+
+    /* Dimension */ 
+    .dmsn { width: 85%; }
+
+    /* More Services Banner */
+    .more-services {
+        padding: 10px 0;
+        background: #2352b3;
+    }
+        /* First Generation Div */
+        .more-services .dmsn > div {
+            float: left;
+            width: 50%;
+            color: #fff
+        }
+        .more-services .dmsn .left {
+            font-size: 100%;
+            text-align: right;
+            padding: 20px 0
+        }
+        .more-services .dmsn .right {
+            text-align: left;
+            padding: 10px 0
+        }
+            .more-services .dmsn .right button {
+                margin-left: 40px
+            }
+
+    #pricing-grid .box {
+        width: 50%!important
+    }
+
+    /* Pricing Box */
+    .ui-pricing-box {
+        font: 100% Roboto;
+    }
+
+    .ui-splash .ui-ctru-box {
+        padding: 1.5% 4%
+    }
+    .montitle {
+        max-width: 450px
+    }
+    .title {
+        font-size: 150%
+    }
+    .ui-splash .text {
+        margin: 1% auto;
+        width: 50%
+    }
+    .slanted.inner-page-splash {
+        padding: 2% 0 18%
+    }
+    #default-splash .ui-ctru-box {
+        padding: 20px
+    }
+    #banner .contacts {
+        display: none;
+        font-size: 70%;
+        padding: 5px 0;
+        background: #fff
+    }
+    #banner .contacts .dtls {
+        float: right;
+        margin-right: -10px
+    }
+    #banner .contacts .dtl {
+        float: left;
+        padding-left: 20px
+    }
+    #banner .contacts #number {
+        padding: 5px 20px;
+        color: #fff;
+        background: #ef6a41;
+        margin: 0 10px 0 25px
+    }
+    
+   /* First-generation */
+   #menu-section > .dmsn > div {
+        position: relative;
+   }
+         /* First-generation */
+        #menu-section > .dmsn > div {
+            float: left;
+        }
+
+        /* Logo  */
+        #menu-section > .dmsn > .logo {
+            width: 100px;
+            padding: 1% 0;
+            min-width: 200px
+        }
+            #menu-section > .dmsn > .logo img {
+                max-width: 85%;
+            }
+
+        /* Pro */
+        #menu-section > .dmsn > .ui-icon {
+            position: absolute;
+            top: 18px;
+            right: 130px;
+        }
+
+    .ui-focalsoft-logo > .right {
+        display: block;
+        font-size: 140%
+    }
+
+    /* Menu Section */
+    #banner > #menu-section {
+        padding: 0;
+        font: 70% Montserrat;
+        font-weight: 700;
+    }
+        /* Menu */
+        #menu-section > .dmsn > .ui-menu {
+            display: block;
+        }
+            #menu-section .ui-menu a {
+                color: #fff;
+            }
+
+        #menu-section > .dmsn > .ui-menu li {
+            font-size: 85%;
+            padding: 5% 3.5%
+        }
+
+        #menu-section > .dmsn > .mobile-label {
+            display: none
+        }
+
+    #default-splash .ui-ctru-box {
+        max-width: 200px
+    }
+
+    #home-splash .main-image {
+        padding: 2.5% 0
+    }
+
+    .focal-product-page .pricing-div p {
+        font-size: 120%;
+    }
+    
+    #home-splash .text {
+        margin: 2% auto;
+        max-width: 480px;
+        font-weight: 300;
+        width: 90%;
+        font-size: 110%
+    }
+    #home-splash img {
+        max-width: 35%
+    }
+    #division-page .what-we-do .grid > .box {
+        width: 50%!important;
+        margin-bottom: 0
+    }
+    #work-grid > .box {
+        width: 31.3%!important;
+        padding: 1%
+    }
+    #social-media-section p {
+        margin: 10px auto 40px;
+        width: 350px
+    }
+    .focal-page .introduction,
+    .focal-product-page .introduction {
+        padding: 3% 0 1%
+    }
+
+    .focal-page .color-div p,
+    .focal-product-page .color-div p {
+        max-width: 600px;
+    }
+
+    #color-grid .box {
+        width: 50%!important
+    }
+
+    #focal-splash {
+        padding: 5% 0 17%
+    }
+    #focal-splash .ui-ctru-box {
+        max-width: 170px
+    }
+    #focal-splash .description {
+        margin: 2% auto;
+        max-width: 450px
+    }
+    .focal-page .introduction p,
+    .focal-product-page .introduction p {
+        margin: 3% auto 2%;
+        font-size: 110%;
+        max-width: 560px
+    }
+
+    .focal-page #solutions-grid > div {
+        border-right: 1px solid #cecece!important;
+        width: 33.3%!important
+    }
+    .focal-page #solutions-grid > div:nth-last-child(-n+2) {
+        border-bottom: 1px solid #cecece
+    }
+    .focal-page #solutions-grid > div:nth-child(3n) {
+        border-right: 0!important
+    }
+    .focal-page #solutions-grid > div:nth-child(4n) {
+        margin: 0 auto;
+        margin-left: 33.3%!important;
+        border-left: 1px solid #cecece;
+        border-bottom: 0!important
+    }
+    #branding-page .introduction .box {
+        width: 50%!important
+    }
+    #project-page .content > div {
+        float: left
+    }
+    #project-page .left {
+        width: 65%
+    }
+    #project-page .ui-label-box {
+        width: 35%;
+        min-height: 300px
+    }
+    .description-section {
+        padding: 0
+    }
+    #company-page .grid .box {
+        width: 50%!important
+    }
+    #company-page .image img {
+        max-width: 100%;
+        padding: 0
+    }
+    #pricing-page .grid .box {
+        width: 33.3%!important
+    }
+    #pricing-page .grid .box > div {
+        padding: 10%
+    }
+    .pricing-box {
+        font: 100% Roboto
+    }
+    .pricing-box .ui-custom-list {
+        height: 330px
+    }
+    .pricing-box button {
+        margin-top: 0
+    }
+    #planner-page .ui-highlight {
+        font-size: 120%
+    }
+    #planner-page .image {
+        padding-bottom: 15px
+    }
+    #planner-page .image img {
+        max-width: 100px
+    }
+    #planner-page > .ui-form {
+        width: 60%;
+        max-width: 620px
+    }
+    #planner-page > .ui-form .ui-form-input input,
+    #planner-page > .ui-form .ui-form-input select {
+        padding: 2.5%!important
+    }
+
+    .ui-focalsoft-small-logo {
+        display: block
+    }
+}
+
+@media screen and (min-width: 601px),
+media screen and (max-width: 800px) {
+    #menu-section > .dmsn > .ui-menu {
+
+    }
+    #menu-section > .dmsn > .ui-menu li {
+        padding: 5% 2.7%
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .texty {
+        margin: 1% auto;
+        width: 50%
+    }
+}
+
+@media screen and (min-width: 921px) {
+    #menu-section > .dmsn > .ui-menu {
+
+    }
+
+    #menu-section > .dmsn > .ui-menu li {
+        font-size: 100%;
+        padding: 5% 4%
+    }
+    #division-page .what-we-do .grid > .box {
+        width: 50%!important
+    }
+    #division-page .what-we-do .grid > .box > div {
+        height: 340px
+    }
+    #division-page .what-we-do .grid > .box:nth-child(1) > div,
+    #division-page .what-we-do .grid > .box:nth-child(2) > div {
+        border-bottom: 1px solid #cecece
+    }
+    #division-page .what-we-do .grid > .box:nth-child(3) > div,
+    #division-page .what-we-do .grid > .box:nth-child(4) > div {
+        padding-top: 25px
+    }
+    #division-page .what-we-do .grid > .box:nth-child(2n+1) > div {
+        border-right: 1px solid #cecece
+    }
+    #services-page .row > .content > div:first-child > div {
+        float: right
+    }
+    #services-page .row > .content > div:last-child > div {
+        float: left
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    /* Dropdown Pointer */
+    #menu-section .ui-menu li > .dropdown-pointer {
+        position: absolute;
+        top: 49%;
+        right: 0;
+        width: 13px;
+    }
+        #menu-section .ui-menu ul {
+            position: absolute;
+            left: 0;
+            top: 90px;
+            width: 50%!important;
+            background: #fff;
+            text-align: left!important;
+            padding: 20px;
+        }
+
+        #menu-section .ui-menu .dropdown{
+            position: absolute;
+            left: -300px!important;
+            top: 85px;
+            width: 1311px!important;
+            background: #fff;
+            text-align: left!important;
+        }
+            #menu-section .ui-menu ul > li {
+                float: left;
+                width: 50%;
+                padding: 10px 0!important;
+            }
+                /* Link */
+                #menu-section .ui-menu ul a {
+                    color: #353333!important
+                }
+                    #menu-section .ui-menu .label a:hover {
+                        color: #ef6a41!important
+                    }
+
+                    #menu-section .ui-menu ul > li > a > div {
+                        float: left
+                    }
+
+                    #menu-section .ui-menu .label > a:hover {
+                        color: #2352b3!important
+                    }
+    #detail-solution {
+        position: relative!important;
+        width: auto!important;
+        top: 0!important;
+        padding: 0!important;
+        height: 155px
+    }
+    #detail-solution > li {
+        float: none!important;
+        width: 100%!important;
+        padding: 10px 0!important;
+        text-align: left;
+        border: 0!important;
+        font: 90% Roboto!important
+    }
+}
+
+@media screen and (min-width: 801px),
+media screen and (max-width: 1280px) {
+    #home-splash .text {
+        width: 70%;
+        font-size: 110%
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #menu-section > .dmsn > .ui-menu {
+
+    }
+
+    #menu-section > .dmsn > .ui-menu li {
+        padding: 5% 5.42%
+    }
+
+    #menu-section .planner {
+        float: right;
+        padding: 1.7% 0;
+        display: block;
+        padding-left: 15px
+    }
+
+    #menu-section .planner .ui-ctru-box {
+        max-width: 150px;
+        padding: 15px 20px;
+        color: #fff;
+        font: 85% Franklin Gothic Heavy;
+        border: 3px solid #fff!important
+    }
+    #menu-section .social-media {
+        float: right;
+        width: 20%;
+        padding: 2.2% 0;
+        padding-left: 15px
+    }
+    #menu-section .social-media a {
+        float: left
+    }
+    #menu-section .social-media .icon {
+        width: 41px;
+        height: 37px
+    }
+    #menu-section .social-media a:not(:last-child) {
+        padding-right: 8px
+    }
+    #menu-section .social-media .icon.facebook {
+        background: url(../images/ui/facebook.png)
+    }
+    #menu-section .social-media .icon.linkedin {
+        background: url(../images/ui/linkedin.png)
+    }
+    #menu-section .social-media .icon.gplus {
+        background: url(../images/ui/google+.png)
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #menu-section > .dmsn > .ui-menu li {
+       padding: 3.5%;
+        min-width: 75px
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    #menu-section .ui-menu {
+
+    }
+
+    #menu-section .ui-menu li {
+        padding: 5.29% 4%
+    }
+    #menu-section .social-media {
+        width: 15%
+    }
+}
+
+@media screen and (min-width: 1380px) {
+    #menu-section > .dmsn > .ui-menu li {
+        padding: 5.29% 5.42%
+    }
+}

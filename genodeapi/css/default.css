@@ -1,0 +1,701 @@
+/* ----------o Custom Fonts o---------- */
+/* Futura Book */
+@font-face{
+	font-family: Futura Book;
+	src: url(fonts/Futura/Futura.ttf);
+}
+
+/* ----------o Primitives o---------- */
+body{
+	font: 100% Roboto, Calibri, Arial, Sans-serif;
+	position: relative;
+	background: #fff;
+}
+	input, select, textarea, button{
+		font-family: Calibri;
+		font-size: 95%;
+	}
+
+	button{
+		padding: 10px;
+		background: #f73b3b;
+		
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		-ms-border-radius: 2px;
+		-o-border-radius: 2px;
+		border-radius: 2px;
+	}
+		/* button events */
+		button:focus,
+		button:hover{
+			background: #c92525;
+			transition: background linear 0.4s;
+		}
+
+/* iScroll Div */
+.iscroll-div{
+	overflow: hidden;
+
+	/* Prevent native touch events on Windows */
+	-ms-touch-action: none;
+
+	/* Prevent the callout on tap-hold and text selection */
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	/* Prevent text resize on orientation change, useful for web-apps */
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+/* Mobile Button */
+.ui-mobile-menu-button {
+	left: 20px;
+	right: 0;
+	top: 15px;
+	border: 0;
+	cursor: pointer;
+}
+	.ui-mobile-menu-button > div{
+	    width: 33px;
+	    height: 3px;
+	    margin-bottom: 6px;
+	    background: #fff;
+	}
+
+.ui-mobile-menu-button:hover,
+.ui-mobile-menu-button:active{
+	cursor: pointer;
+	border: 0;
+	border-radius: 2px;
+	background: #7d7def;
+	transition: background linear 0.35s;
+}
+
+/* 3-rd party code */w
+.CodeMirror{
+	height: auto;
+}
+
+/* Code Wrappers based on the language */
+.code-wrapper{
+	font-family: monospace;
+	font-size: 118%;
+	color: #c1c0c0;
+	background: #1d1d1d;
+}
+	.code-wrapper .comment{
+		color: #259d30;
+	}
+
+/* Code Function */
+#code-fn{
+	color: #fff;
+	padding: 5px;
+	background: #0f0f4a;
+	margin: 2px 10px;
+}
+	#code-fn:hover{
+		background: #3162ca;
+	}
+
+.fn.active #code-fn{
+	color: green;
+	background: #fff;
+}
+
+/* ----------o Global Style o---------- */
+.dmsn{ width: 95%; }
+
+/* ----------o Full Page styling o---------- */
+#full-page{
+	position: absolute;
+	width: 100%;
+	min-height: 100%;
+	background: #3162ca;
+}
+	/* Menu */
+	#full-page > .top-banner{
+		color: #fff;
+		height: 60px;
+		border-bottom: 1px solid #6795F7;
+	}
+		/* Logo */
+		#full-page > .top-banner > .dmsn > .logo{
+			float: left;
+			padding: 13px 0;
+			width: 20%;
+		}
+			/* first-generation div */
+			#full-page > .top-banner > .dmsn > .logo > div{
+				float: left;
+			}
+
+			/* Label div */
+			#full-page > .top-banner > .dmsn > .logo > .label{
+				font: 140% Roboto Bold;
+				/* 
+				font-size: 120%;
+				font-weight: 700; 
+				*/
+			}
+
+			/* Version div */
+			#full-page > .top-banner > .dmsn > .logo > .version{
+				margin-left: 20px;
+				margin-top: 3px;
+				font-size: 70%;
+				width: 100px;
+				border: 1px solid #fff;
+			}
+				/* First-generation div */
+				#full-page > .top-banner > .dmsn > .logo > .version > div{
+					float: left;
+					width: 50%;
+					padding: 5px 0;
+				}
+
+				/* First-generation div */
+				#full-page > .top-banner > .dmsn > .logo > .version > .number{
+					color: #3162ca;
+					background: #fff;
+				}
+
+		/* Logo */
+		#full-page > .top-banner > .dmsn > .menu{
+			float: right;
+			width: 70%;
+		}
+
+	/* Menu */
+	#full-page > .content{
+		width: 100%;
+		min-height: 980px;
+	}
+		#full-page > .content > .left{
+			width: 25%;
+			height: 960px;
+			background: #2851a9;
+		}
+
+/* Page Styling */ 
+#page{
+
+}	
+	/* Side Menu Section*/
+	#page > #side-menu-section{
+		display: none;
+	}
+
+	/* Content Section */
+	#page > #main-section{
+
+	}
+		/* top bar */
+		#page > #main-section > .top-bar{
+		    text-align: left;
+		    width: 100%;
+		    position: fixed;
+		    background: #2352b3;
+		    z-index: 1000000;
+		    height: 62px;
+		}
+			/* Mobile Button */
+			#page > #main-section > .top-bar .ui-mobile-menu-button{
+				left: 10px;
+			}
+				#page > #main-section > .top-bar .ui-mobile-menu-button > div{
+				    height: 2px;
+				    width: 27px;
+				}
+
+			/* Mobile Label */
+			#page > #main-section > .top-bar .mobile-label{
+				margin: 17px auto;
+				width: 200px;
+				color: #fff;
+				font: 100% Roboto bold;
+				text-align: center;
+			}
+
+			/* Path */
+			#page > #main-section > .top-bar > .path{
+				display: none;
+				text-align: center;
+				padding: 1.5% 20px;
+				margin-bottom: -2px;
+			}
+				#page > #main-section > .top-bar > .path a{
+					color: #fff;
+					font: 90% Roboto bold;
+				}
+
+			#page > #main-section > .top-bar > .path:last-child{
+				display: block;
+				padding: 20px 0;
+				margin: 0 auto;
+			}
+			
+		/* Content */
+		#page > #main-section > .content{
+			padding: 18% 10px 10px 10px;
+		}
+			/* First-generation div */
+			#page > #main-section #text-div > div{
+				float: left;
+			}
+			
+			/* Description */
+			#page > #main-section #text-div .description{
+				width: 97%;
+				padding: 1.5%;
+				min-height: 100px;
+				background: #eee;
+			}
+
+			#page > #main-section #text-div .notes{
+				width: 32%;
+				padding: 0 1.5%;
+			}
+			
+			/* Code Section */
+			#page > #main-section #code-div{
+
+			}
+				#page > #main-section #console-div{
+					border-left: 6px solid #2352b3;
+				}
+
+		/* First-generation div */
+		#page #console-div .code-wrapper{
+			position: relative;
+			padding: 2%;
+		}
+			/* First-generation div */
+			#page > #main-section > .content > div{
+				text-align: left;
+			}	
+			
+			/* Text Section */
+			#page > #main-section .loading-div{
+				position: absolute;
+				width: 73%;
+				height: 100%;
+				background: #fff;
+				opacity: .9;
+				z-index: 100010;
+			}
+
+			#page > #main-section #console-gif{
+				width: 100%;
+				background: #000;
+			}
+				#page > #main-section .loading-div .gif{
+					position: absolute;
+					top: 45%;
+					left: 45%;
+				}
+
+			/* Text Section */
+			#text-div{
+				
+			}
+				/* First generation div */
+				#text-div > div{
+					margin-bottom: 10px;
+				}
+
+				/* Description */
+				#text-div .description{
+					font-size: 105%;
+					color: #4e4e4e;
+				}
+
+				/* Notes */
+				#text-div .notes{
+
+				}
+					#title{
+						color: #fff;
+						padding: 2px 5px;
+						background: #000;
+						font: 90% Roboto Bold;
+					}
+
+			/* Code Section */
+			#example-div{
+				min-height: 200px;
+			}
+				#example-div .xcode{
+					padding: 10px 0;
+				}
+					#example-div .xcode button{
+						max-width: 150px;
+					}
+
+			/* Code Section */
+			#code-div{
+				width: 100%;
+				color: #fff;
+			}
+				/* Language Tabs */
+				#code-div .lan-tabs{
+					margin-bottom: 5px;
+				}
+					/* Each tab */
+					#code-div .lan-tabs > div{
+						float: left;
+						color: #fff;
+						margin-right: 5px;
+						background: #2352b3;
+						padding: 7px 13px;
+					}
+
+					#code-div .lan-tabs > div:last-child{
+						margin-right: 0;
+					}
+
+					#code-div .lan-tabs > div.active{
+						font-weight: 700;
+					}
+
+					#code-div .lan-tabs > div:hover{
+						opacity: 0.8;
+						cursor: pointer;
+					}
+
+					/* CSS Tab */
+					#code-div .lan-tabs .css{
+						background: #dc4040;
+					}
+
+					/* JS Tab */
+					#code-div .lan-tabs .js{
+						background: #b13e93;
+					}
+
+				/* Console */
+				#console-div{
+					position: relative;
+					background: #1d1d1d;
+				}
+					#console-div .edit-icon{
+					    position: absolute;
+					    z-index: 100000;
+					    top: 10px;
+					    right: 10px;
+					    cursor: pointer;
+					}
+
+					#console-div .edit-icon button{
+						padding: 8px 20px;
+					}
+
+			/* functions */
+			#page > #main-section > .content > .functions{
+				width: 40%;
+			}
+				#page > #main-section > .content > .functions > .fn{
+					float: left;
+					width: 100%;
+					text-align: left;
+					border-top: 1px solid #cecece;
+				}
+
+				#page > #main-section > .content > .functions > .fn.active{
+					min-height: 250px;
+				}
+					/* title */
+					#page > #main-section > .content > .functions > .fn > .title{
+						color: #000;
+					}	
+						/* first-generation div */
+						#page > #main-section > .content > .functions > .fn > .title > div{
+							float: left;
+						}
+
+						#page > #main-section > .content > .functions > .fn > .title > .text{
+							padding: 12px 0;
+							font-size: 130%;
+							padding-left: 15px;
+						}
+						
+						#page > #main-section > .content > .functions > .fn > .title > .icon{
+							margin-top: 20px;
+							margin-left: 10px;
+							width: 20px;
+							height: 15px;
+							background: url(../images/ui/b-eye.png);
+						}
+						
+						#page > #main-section > .content > .functions > .fn > .title > .icon.active{
+							background: url(../images/ui/active-eye.png);
+						}
+
+					/* details */
+					#page > #main-section > .content > .functions > .fn > .details{
+						color: #6b6b6b;
+						padding: 15px;
+						min-height: 110px;
+					}
+
+				#page > #main-section > .content > .functions > .fn.active{
+					cursor: pointer;
+					background: #3162ca;
+					border-top-color: #3162ca;
+					transition: background linear 0.3s;
+				}
+					#page > #main-section > .content > .functions > .fn.active > .title,
+					#page > #main-section > .content > .functions > .fn.active > .details{
+						color: #f4f4f4;
+					}
+						#page > #main-section > .content > .functions > .fn.active > .title > .icon{
+							background: url(../images/ui/eye.png);
+						}
+						
+			/* console*/
+			#page > #main-section > .content > .console{
+				float: right;
+				width: 60%;
+				right: 0;
+				color: #fff;
+				min-height: 100%;
+				background: #272822;
+			}
+				/* console bar */
+				#page > #main-section > .content > .console > .bar{
+					position: fixed;
+					width: 40%;
+					text-align: left;
+					background: #272c31;
+					border-bottom: 1px solid #000;
+					z-index: 1000001;
+				}
+					/* first-generation div */
+					#page > #main-section > .content > .console > .bar > div{
+						float: left;
+					}
+					
+					/* title */
+					#page > #main-section > .content > .console > .bar > .title{
+						width: 60%;
+						padding: 15px 20px;
+						margin-right: -40px;
+					}
+
+					/* right */
+					#page > #main-section > .content > .console > .bar > .right{
+						float: right;
+					}
+						/* first-generation div */
+						#page > #main-section > .content > .console > .bar > .right > div{
+							float: left;
+						}
+
+						/* dropdown div */
+						#page > #main-section > .content > .console > .bar > .right > .dropdown{
+							margin-top: 10px;
+							margin-right: 10px;
+							text-align: center;
+							padding: 5px 10px;
+							cursor: pointer;
+							border: 1px solid transparent;
+						}
+						
+						/* active and hover dropdown */
+						#page > #main-section > .content > .console > .bar > .right > .dropdown:hover,
+						#page > #main-section > .content > .console > .bar > .right > .dropdown.active{
+							background: #161717;
+							border-color: #000;
+						}
+						
+						#page > #main-section > .content > .console > .bar > .right > .dropdown-panel{
+							display: none;
+							position: absolute;
+							top: 52px;
+							right: 126px;
+							width: 180px;
+							color: #c3c2c2;
+							background: #272626;
+							border-left: 1px solid #000;
+							border-right: 1px solid #000;
+						}
+							/* row */
+							#page > #main-section > .content > .console > .bar > .right > .dropdown-panel > .row{
+								padding: 15px 10px;
+								border-bottom: 1px solid #000;
+							}
+
+							#page > #main-section > .content > .console > .bar > .right > .dropdown-panel > .row:hover{
+								cursor: pointer;
+								color: #fff;
+								background: #3b70e1;
+								transition: background linear 0.25s;
+							}
+
+						/* langauges */
+						#page > #main-section > .content > .console > .bar > .right > .languages > .each{
+							position: relative;
+							float: left;
+							cursor: pointer;
+							color: #fff;
+							text-align: center;
+							padding: 16px 20px;
+							font-style: italic;
+							font-size: 90%;
+							font-family: Roboto Bold;
+							border-left: 1px solid #000;
+						}
+
+						/* html language */
+						#page > #main-section > .content > .console > .bar > .right > .languages > #html{
+							width: 60px;
+						}
+							/* generated code*/
+							#page > #main-section > .content > .console > .bar > .right > .languages > .each > .gcode{
+								position: absolute;
+								top: 2px;
+								right: 3px;
+								font-size: 70%;
+								color: #000;
+								padding: 1px 7px;
+								background: #fff;
+								border-radius: 15px;
+							}
+						
+						#page > #main-section > .content > .console > .bar > .right > .languages > .each:hover{
+							background: #222427;
+						}
+						
+						#page > #main-section > .content > .console > .bar > .right > .languages > .each.active{
+							background: #3b70e1;
+						}
+				
+				#page > #main-section > .content > .console > .details{
+					padding: 10px;
+					font-family: Courier;
+				}
+				
+				/* console bar */
+				#page > #main-section > .content > .console > .codex{
+					position: fixed;
+					width: 40%;
+					height: 100%;
+					overflow-y: scroll;
+					text-align: left;
+					color: #6d6a6a;
+					margin-top: 50px;
+				}
+					/* first-generation div */
+					#page > #main-section > .content > .console > .codex > div{
+						padding: 10px;
+					}
+
+					/* live code */
+					#page > #main-section > .content > .console > .codex > .live-code{
+						width: 100%;
+						text-align: center;
+						background: #fff;
+						min-height: 350px;
+					}
+						#page > #main-section > .content > .console > .codex > .live-code > div{
+							margin: 20px auto;
+							width: 300px;
+						}
+
+						/* mobile wrapper */
+						#page > #main-section > .content > .console > .codex > .live-code > .mobile-wrapper{
+							position: relative;
+							padding: 10px;
+							border: 1px solid #cecece;
+						}
+							/* <ui-social-networks> */
+							.ui-social-networks{
+								margin: 0 auto;
+								width: 230px;
+							}
+
+							/* <ui_mobile_menu_button> */
+							.ui-mobile-button-div{
+								margin-left: -10px;
+								margin-right: -10px;
+								height: 40px;
+								border-bottom: 1px solid #cecece;
+								margin-bottom: 10px;
+							}
+								/* actual button */
+								.ui-mobile-button-div .ui-mobile-menu-button{
+									top: 10px!important;
+								}
+
+							/* <ui_table> */
+							.ui-table{
+								text-align: left;
+							}
+
+							/* <ui_splash> */
+							.ui-splash{
+								width: 600px!important;
+								height: 400px;
+							}
+
+							/* <ui_browser > */
+							.ui-browser{
+								width: 650px!important;
+							}
+
+							/* <ui_timeline> */
+							.ui-timeline{
+								width: auto!important;
+								padding: 5% 5% 0 5%;
+							}
+
+							/* <ui-form> */
+							.ui-form{
+								width: 60%;
+								min-width: 400px;
+								padding: 2%;
+								margin: 5% auto;
+							}
+								/* form input */
+								.ui-form-input {
+						
+								}
+
+								/* submit button */
+								#unique-id-form .ui-form-submit,
+								#third-unique-id-form .ui-form-submit{
+									padding-top: 15px;
+								}  
+
+					/* text code */
+					#page > #main-section > .content > .console > .codex > .text-code{
+						color: #b2b2b2;
+					}
+
+/* ----------o Footer Styling o---------- */ 
+#footer{
+	min-height: 50px;
+	background: #424141;
+}
+	#footer li:last-child a{
+		padding: 10px;
+		background: #000;
+	}
+	
+	#footer .trademark{
+		position: absolute;
+		width: 100%;
+		font-size: 70%;
+		color: #898989;
+		bottom: 0;
+		padding: 10px 0;
+		background: #2a2929;
+	}

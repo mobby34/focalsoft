@@ -1,0 +1,1231 @@
+/* Import fonts from Google */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Roboto:300,400,500,700');
+
+/* Rewrite basic attributes*/
+body {
+    font: 100% Roboto, Calibri, Arial, Sans-serif;
+    position: relative;
+    background: transparent
+}   
+    /* Buttons */
+    button {
+        font: 100% Montserrat;
+        font-weight: 700;
+        padding: 15px;
+        background: #1f4fb2;
+        border-radius: 5px;
+    }
+
+    button:focus,
+    button:hover {
+        background: #e85324;
+        transition: background linear .4s
+    }
+
+    /* Green Button */
+    button.green{
+        background: #1e971c;
+    }
+
+    button:focus,
+    button:hover {
+        background: #e85324;
+        transition: background linear .4s
+    }
+
+/**
+ *     Banner Section
+ */
+#banner{
+
+}
+    /* Slides */
+    #banner .slide{
+        padding: 5% 0;
+        height: 430px;
+        background: url(../images/slider/1.jpg);
+    }   
+        /* First-generation */ 
+        #banner .slide .content > div{
+            float: left;
+        }   
+
+        /* Content Box */ 
+        #contbox{
+            width: 400px;
+            color: #000;
+            padding: 40px;
+            background: #fff;
+            border: 4px solid #444241;
+            border-radius: 5px;
+        } 
+
+        #contbox.center{
+            margin: 0 auto;
+        }
+
+        #contbox.left{
+            text-align: left;
+        }
+            /* Headline */ 
+            #contbox > .headline{
+                font: 180% Montserrat;
+                font-weight: 700;
+            }
+
+            #contbox.center > .headline{
+                font-size: 120%;
+            }
+
+            /* Paragraph */ 
+            #contbox > p{
+                font: 110% Roboto;
+            }
+
+            /* Button */ 
+            #contbox button{
+                max-width: 170px;
+            }
+
+        /* Paperwork Cell */
+        #banner .slide .content > .paperwork-cell{
+            max-width: 390px;
+            margin-left: 120px;
+        }
+            #banner .slide .content > .paperwork-cell img{
+                max-width: 100%;
+            }
+
+    /* Action bar */
+    #action-bar{
+        width: 100%;
+        padding: 30px 0;
+        background: #e4e6eb;
+    }
+        /* Boxes */
+        #action-bar .box{
+            text-align: left;
+            width: 33.3%!important;
+        }
+            /* Title */
+            #action-bar .box .title{
+                font: 120% Montserrat;
+                font-weight: 700;
+                padding: 10px 0 0;
+            }
+
+            /* Title */
+            #action-bar .box p{
+                font: 100% Roboto;
+            }
+
+            /* Button */
+            #action-bar .box button{
+                max-width: 150px;
+                font-size: 90%;
+                background: #249d22;
+            }
+
+    /* Homepage */
+    #home-page {
+        
+    }
+        /* First-generation */
+        #home-page > div{
+            float: left;
+            width: 100%;
+        }
+
+        /* Service-section */
+        #home-page > .service-section{
+            border-bottom: 1px solid #cecece;
+        }
+            #home-page > .service-section .box:first-child{
+                text-align: left;
+                margin-right: -1px;
+                padding: 5% 0;
+            }
+
+            #home-page > .service-section .box:last-child{
+                border-left: 1px solid #cecece;
+            }
+                #home-page > .service-section .title{
+                    font-size: 170%;
+                    margin-bottom: -10px;
+                }
+
+                #home-page > .service-section p{
+                    max-width: 450px;
+                }
+
+                #home-page > .service-section button{
+                    margin-top: 20px;
+                    font-size: 85%;
+                    max-width: 150px;
+                }
+
+            #home-page > .service-section img{
+                max-width: 350px;
+                padding: 20% 0;
+            }
+
+        /* Why-us-section */
+        #home-page > .why-us-section{
+            
+        }
+             #home-page > .why-us-section .box{
+                width: 29.3%!important;
+                padding: 2%;
+             }
+                #home-page > .why-us-section .ui-image-text{
+                    font-size: 80%;
+                }
+
+    /* More Services Banner */
+    .more-services {
+        padding: 10px 0;
+        background: #2352b3;
+    }
+        /* First Generation Div */
+        .more-services .dmsn > div {
+            padding: 10px 0;
+            text-align: center
+        }
+
+        .more-services .dmsn .left {
+            color: #fff
+        }
+
+        .more-services .dmsn .right {
+            padding: 10px 0
+        }
+            .more-services .dmsn .right button {
+                width: 200px;
+                color: #1f2533;
+                font-size: 80%;
+                padding: 15px 0;
+                background: #fff
+            }
+
+    /* Pricing Div*/
+    .focal-product-page .pricing-div{
+        font-size: 100%!important
+    }
+        /* Prize */
+        .ui-pricing-box .ui-camel-prize {
+            font: 200% Montserrat;
+            font-weight: 700;
+        }
+
+        .focal-product-page .pricing-div p{
+            margin: 0 auto;
+            max-width: 400px;
+            font-weight: 300;
+            font-size: 120%;
+        }
+
+        .focal-product-page #pricing-grid > div > div {
+            padding: 2.5%;
+        }
+
+        /* Button */
+        #pricing-grid button {
+            width: 95%;
+            border-radius: 5px!important;
+        }
+
+        /* Custom Request */
+        #pricing-div .custom-request{
+            max-width: 550px;
+            margin: 3% auto 5%;
+        }
+            #pricing-div .custom-request button{
+                margin-top: 10px;
+                max-width: 70%;
+            }
+
+
+/**
+ *        Global classes   
+ */
+.bold { font: 100% Roboto Bold }
+
+.ui-custom-list {
+    font-weight: 300;
+    font-size: 110%;
+}
+
+/* Montitle */
+.montitle {
+    margin: 3% auto;
+    width: auto;
+    max-width: 350px;
+    color: #000;
+    font: 125% Montserrat;
+    font-weight: 700;
+}
+
+#hilight {
+    font-size: 95%;
+    color: #fff;
+    padding: 1px 10px;
+    background: #ef6a41;
+}
+    #hilight.gb{
+        font-size: 120%;
+        background: #28a726;
+    }
+
+.ui-parent-menu-list li:first-child {
+    display: none
+}
+
+.ui-pricing-box {
+    font: 120% Roboto;
+    border: 0;
+    box-shadow: 0!important;
+    border-top: 5px solid #28a726;
+}
+    .ui-pricing-box #hilight{
+        font: 70% Montserrat;
+    }
+
+.ui-pricing-box.active {
+    border: 5px solid #565555
+}
+
+.ui-scroll-btn {
+    top: 72.17%;
+    left: 88.1%;
+    width: 60px;
+    height: 60px;
+    background: #ef6a41;
+    border-radius: 50%
+}
+
+.ui-scroll-btn:hover {
+    background: #dc5329
+}
+
+.dmsn {
+    width: 95%
+}
+
+.title {
+    color: #000;
+    font: 120% Montserrat;
+    font-weight: 700;
+    padding: 25px 0
+}
+
+.title .ui-line {
+    width: 70px;
+    height: 7px;
+    margin: 10px auto;
+    background: #2352b3
+}
+
+.ui-line {
+    min-width: 30px;
+    width: 50px;
+    margin: 10px auto;
+    height: 6px;
+    background: #ef6a41
+}
+
+.ui-status-bar.green {
+    font: 70% Roboto
+}
+
+.ui-mobile-menu {
+    background: #fff
+}
+
+.ui-mobile-menu li {
+    color: #544f4f;
+    font-size: 100%;
+    padding: 25px 10px;
+    border-bottom: 1px solid #dedede
+}
+
+.ui-mobile-menu li a {
+    color: #000
+}
+
+.ui-mobile-menu li:active,
+.ui-mobile-menu li:hover {
+    background: #e2623b
+}
+
+.ui-mobile-menu li:active a,
+.ui-mobile-menu li:hover a {
+    color: #fff
+}
+
+.ui-mobile-menu #detail-solution {
+    margin-top: 10px
+}
+
+.ui-parent-menu-list .ui-mobile-menu > li:active,
+.ui-parent-menu-list .ui-mobile-menu > li:hover {
+    background: transparent
+}
+
+.ui-parent-menu-list .ui-mobile-menu > li:active a,
+.ui-parent-menu-list .ui-mobile-menu > li:hover a {
+    color: #000
+}
+
+.inner-page-splash {
+    padding: 4% 0
+}
+
+.slanted.inner-page-splash {
+    padding: 2% 0 30%
+}
+
+.inner-page-splash .ui-ctru-box {
+    font-weight: 700;
+    max-width: 130px;
+    font: 120% Franklin Gothic Heavy;
+    border-radius: 0;
+    border: 6px solid #fff
+}
+
+.inner-page-splash .description {
+    font-size: 70%;
+    color: #fff;
+    max-width: 300px;
+    margin: 2% auto 0
+}
+
+.ui-focalsoft-logo {
+    border: 0
+}
+
+.ui-focalsoft-logo > .left {
+    width: 20%;
+    border: 0
+}
+
+.ui-focalsoft-logo > .left img {
+    margin-top: -10px;
+    max-width: 80%
+}
+
+.ui-focalsoft-logo > .right {
+    display: none
+}
+
+.ui-highlight span {
+    font: 130% Roboto Condensed;
+    font-weight: 700
+}
+
+.ui-splash .ui-ctru-box {
+    font: 120% Roboto;
+    padding: 12px 4%;
+    max-width: 150px;
+    margin: 2% auto;
+    background: #ef6a41;
+    border-color: #ef6a41
+}
+
+.ui-splash .text {
+    margin: 4% auto 6%;
+    font: 120% Roboto;
+    width: 100%;
+    max-width: 500px
+}
+
+.texty {
+    margin: 5% auto;
+    font: 110% Roboto;
+    font-weight: 300;
+    width: 100%
+}
+
+.or {
+    margin: 0 auto;
+    width: 30px;
+    height: 27px;
+    padding: 12px 10px 10px;
+    font: 110% Roboto;
+    font-weight: 700;
+    color: #fff;
+    background: #2352b3
+}
+
+#banner {
+    position: relative;
+}
+    #banner .contacts {
+        display: none
+    }
+
+#banner > #menu-section {
+    padding: 7px 0;
+    background: #2352b3
+}
+
+#banner > #menu-section.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10000
+}
+
+#menu-section > .dmsn > div {
+    float: left
+}
+
+/* Logo */
+#menu-section > .dmsn > .logo {
+
+}
+    #menu-section > .dmsn > .logo img {
+        max-width: 70%
+    }
+
+#menu-section > .dmsn > .ui-menu {
+    width: 80%;
+    color: #fff
+}
+
+#menu-section > .dmsn > .ui-menu li {
+    padding: 3% 7.7%;
+    border-bottom: 5px solid transparent
+}
+
+.ui-dropdown-icon {
+    width: 10px;
+    height: 6px;
+    background: url(../genode/images/ui/d-w-pointer.png)
+}
+
+#menu-section > .dmsn > .ui-menu li.active-tab a,
+#menu-section > .dmsn > .ui-menu li:hover a,
+#menu-section > .dmsn > .ui-menu li a {
+    color: #fff
+}
+
+#menu-section > .dmsn > .ui-menu li.active-tab {
+    border-color: #ef6a41
+}
+
+#menu-section > .dmsn > .mobile-label {
+    width: 65%;
+    color: #fff;
+    font: 100% Franklin Gothic Heavy;
+    margin: 12px auto
+}
+
+#banner > #menu-section .ui-mobile-menu-button {
+    display: block;
+    top: 13px;
+    right: 20px
+}
+
+#banner > #menu-section .ui-mobile-menu-button > div {
+    height: 3px;
+    background: #fff
+}
+
+#banner > #menu-section .ui-mobile-menu-button:hover,
+#banner > #menu-section .ui-mobile-menu-button.active {
+    background: #fff
+}
+
+#banner > #menu-section .ui-mobile-menu-button.active > div,
+#banner > #menu-section .ui-mobile-menu-button:hover > div,
+#banner > #menu-section .ui-mobile-menu-button:hover > div {
+    background: #2d5ab8
+}
+
+#menu-section > .dmsn > .ui-menu,
+#menu-section > .dmsn > .ui-menu {
+    display: none
+}
+
+#banner > .ui-splash {
+    color: #fff;
+    padding: 1% 0
+}
+
+#banner > .ui-splash .title {
+    padding: 1% 0
+}
+
+#default-splash .ui-ctru-box {
+    margin-top: 2%;
+    max-width: 175px;
+    min-width: 100px;
+    font-size: 120%;
+    padding: 12px
+}
+
+#default-splash .text {
+    width: 44%;
+    margin: 2% auto
+}
+
+.page {
+    color: #000
+}
+
+#blue-hl span {
+    background: #2352b3
+}
+
+#home-page .our-work {
+    border-top: 1px solid #dedede;
+    min-height: 500px
+}
+
+#work-grid > .box {
+    width: 48%!important;
+    padding: 1%
+}
+
+#work-grid > .box img {
+    max-width: 100%
+}
+
+.work-filter {
+    position: relative
+}
+
+.work-filter .filter {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%
+}
+
+.work-filter .filter .label {
+    padding-top: 25%;
+    color: transparent;
+    font: 100% Roboto;
+    font-weight: 700
+}
+
+.work-filter .filter .label > .type {
+    font-size: 90%
+}
+
+.work-filter:hover .filter {
+    cursor: pointer;
+    background: url(../images/filters/blue.png)!important
+}
+
+.work-filter:hover .filter .label {
+    color: #fff
+}
+
+#home-page .our-work > .work-table #bck-ctru-box {
+    margin: 15px auto
+}
+
+#social-media-section {
+    background: #eee
+}
+
+#social-media-section p {
+    margin: -10px auto 20px;
+    font: 110% Roboto;
+    width: 250px;
+    font-weight: 300
+}
+
+#division-page {
+    padding: 20px 0
+}
+
+#division-page .ui-highlight {
+    padding: 20px 0 5px
+}
+
+#division-page .what-we-do {
+    color: #424040
+}
+
+#division-page .what-we-do .content {
+    padding: 5% 0
+}
+
+#division-page .what-we-do .grid > .box {
+    width: 100%!important;
+    margin-bottom: 30px
+}
+
+#division-page .wdo-text .title {
+    font: 100% Franklin Gothic Heavy;
+    padding: 10px 0
+}
+
+#division-page .wdo-text .image img {
+    max-width: 80%
+}
+
+#division-page .wdo-text p {
+    padding: 2% 0;
+    width: 70%;
+    margin: 0 auto;
+    font: 95% Roboto
+}
+
+#division-page .wdo-text #bck-ctru-box {
+    padding: 13px 10px;
+    font-size: 70%
+}
+
+#division-page .wdo-text #bck-ctru-box a {
+    color: #000
+}
+
+#division-page .wdo-text #bck-ctru-box:hover a {
+    color: #fff
+}
+
+#bck-ctru-box {
+    max-width: 100px;
+    color: #000;
+    border-color: #2251b1;
+    border-radius: 0;
+    font: 100% Roboto;
+    font-weight: 700
+}
+
+#bck-ctru-box:hover {
+    color: #fff;
+    background: #214ba0
+}
+
+#project-page .content {
+    padding: 2% 0
+}
+
+#project-page .left img {
+    max-width: 100%;
+    text-align: center
+}
+
+#project-page .ui-label-box .title {
+    font: 90% Franklin Gothic Heavy;
+    background: #2352b3
+}
+
+#project-page .ui-label-box .ui-table {
+    width: 100%;
+    border: 0;
+    font-size: 90%
+}
+
+#project-page .ui-label-box .row,
+#project-page .ui-label-box .block {
+    text-align: left;
+    border: 0!important
+}
+
+#project-page .ui-label-box .row a {
+    color: #2352b3
+}
+
+#project-page .ui-label-box .row a:hover {
+    text-decoration: underline
+}
+
+#project-page .related-projects {
+    padding-bottom: 10px;
+    border-top: 1px dashed #cecece
+}
+
+#project-page .related-projects .title {
+    padding: 15px 0
+}
+
+#focal-splash {
+    position: relative;
+    left: 0;
+    padding: 5% 0 35%
+}
+
+#focal-splash .ui-ctru-box {
+    max-width: 130px;
+    border: 6px solid #ef6a41!important
+}
+
+#focal-splash .description {
+    font-size: 100%;
+    max-width: 300px;
+    margin: 6% auto 8%
+}
+
+.focal-page .introduction,
+.focal-product-page .introduction {
+    padding: 8% 0 0
+}
+
+#branding-page .introduction {
+    padding: 2% 0
+}
+
+#branding-page .introduction .box {
+    width: 100%!important
+}
+
+#branding-page .introduction img {
+    max-width: 100%
+}
+
+.focal-page .introduction p,
+.focal-product-page .introduction p {
+    margin: 11% auto;
+    color: #4a4747;
+    font-weight: 300;
+    font-size: 120%
+}
+
+.focal-page p,
+.focal-product-page p {
+    padding: 0 15px
+}
+
+.focal-product-page{
+    background: #e5f0e5;
+}
+
+.focal-page #color-grid > div,
+.focal-product-page #color-grid > div {
+    padding: 3% 0
+}
+
+.focal-page .color-div .montitle,
+.focal-page .color-div p,
+.focal-product-page .color-div .montitle,
+.focal-product-page .color-div p {
+    color: #000;
+}
+
+.focal-page .color-div p,
+.focal-product-page .color-div p {
+    margin: 2% auto;
+    max-width: 450px;
+    font-weight: 300;
+    font-size: 120%
+}
+
+.focal-page .color-div .image img,
+.focal-product-page .color-div .image img {
+    max-width: 70%
+}
+
+#startup-page .color-div .image {
+    max-width: 100%;
+    padding: 10px;
+    background: #fff
+}
+
+#startup-page .color-div .image img {
+    max-width: 100%
+}
+
+.focal-page .solutions-div .montitle {
+    margin: 2% auto
+}
+
+.focal-page .solutions-div p {
+    margin: 0 auto 2%;
+    max-width: 400px;
+    font-size: 90%
+}
+
+.focal-page #solutions-grid {
+    padding-bottom: 20px
+}
+
+.focal-page #solutions-grid > div {
+    width: 100%!important;
+    margin-right: -1px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #cecece
+}
+
+.focal-page #solutions-grid > div:nth-child(2n) {
+    border-right: 0
+}
+
+.focal-page #solutions-grid .image {
+    padding: 10px 0
+}
+
+.focal-page #solutions-grid .label {
+    padding: 15px 0;
+    color: #000;
+    font: 110% Roboto Bold
+}
+
+.focal-page #solutions-grid .ui-ctru-box {
+    max-width: 80px;
+    padding: 13px 18px;
+    font-size: 60%
+}
+
+.focal-product-page a {
+    color: #de4e21
+}
+
+.focal-product-page a:hover {
+    text-decoration: underline
+}
+
+#color-grid .box,
+#pricing-grid .box {
+    width: 100%!important
+}
+
+#logo-design-page .color-div {
+    background: #3fb94b
+}
+
+#work-page {
+    padding: 3% 0
+}
+
+#work-page .work-menu {
+    width: 98%;
+    margin: 25px auto 2px
+}
+
+#work-page .work-menu .filter {
+    cursor: pointer;
+    float: left;
+    font-size: 80%;
+    margin-right: 10px;
+    padding: 8px 10px;
+    color: #000;
+    background: #f0f0f0
+}
+
+#work-page .work-menu .filter:hover,
+#work-page .work-menu .filter:active {
+    background: #cecece
+}
+
+#work-page .work-menu .filter.active {
+    color: #fff;
+    background: #ef6a41
+}
+
+#services-splash {
+    position: relative;
+    left: 0;
+    background: url(../images/ui/services-splash.jpg)
+}
+
+#services-page .sumdiv {
+    padding: 0!important
+}
+
+#services-page .ui-circle-image {
+    border: 6px solid #2c58b7
+}
+
+.sumdiv > .row.alt {
+    color: #fff;
+    background: #e25a30
+}
+
+.sumdiv > .row > .title {
+    font-size: 100%;
+    padding: 5px 0
+}
+
+.sumdiv > .row.alt .title {
+    color: #fff
+}
+
+.sumdiv > .row.alt .title .ui-line {
+    background: #000
+}
+
+#services-page .sumdiv > .row .content {
+    padding: 0!important;
+    font: 100% Roboto;
+    text-align: left;
+    margin-bottom: 20px
+}
+
+#services-page .sumdiv > .row.alt .content {
+    margin-top: -30px
+}
+
+#services-page .row > .content > div:last-child > div,
+#services-page .row > .content > div:first-child > div {
+    float: none
+}
+
+#services-page .sumdiv .ui-circle-image {
+    margin: 8% auto
+}
+
+#services-page .sumdiv .ui-circle-image .image {
+    top: 27%
+}
+
+#services-page .sumdiv .ui-circle-image img {
+    max-width: 60%
+}
+
+.description-section {
+    color: #383737;
+    padding: 0 30px;
+    line-height: 1.5
+}
+
+.alt .description-section {
+    color: #fff
+}
+
+.description-section ul {
+    margin: 0 auto;
+    text-align: left;
+    padding-left: 10px;
+    width: 95%;
+    list-style-image: url(../genode/images/ui/black-dot.png)
+}
+
+.description-section ul li {
+    padding-top: 10px;
+    padding-left: 12px
+}
+
+#company-splash {
+    position: relative;
+    left: 0;
+    background: url(../images/ui/company-splash.jpg)
+}
+
+#company-page {
+    text-align: left
+}
+
+#company-page .row {
+    padding: 2% 0
+}
+
+#company-page .title {
+    margin: 0 auto 2%;
+    text-align: center;
+    padding: 5px 0
+}
+
+#company-page .grid {
+    padding: 1% 0
+}
+
+#company-page .grid .box {
+    width: 100%!important
+}
+
+#company-page .image {
+    text-align: center
+}
+
+#company-page .image img {
+    max-width: 60%;
+    padding: 10px 0
+}
+
+#company-page .text {
+    margin-top: 40px;
+    padding: 20px;
+    font: 110% Calibri;
+    background: #ececec
+}
+
+#pricing-splash {
+    position: relative;
+    left: 0;
+    background: url(../images/ui/pricing-splash.jpg)
+}
+
+.even {
+    background: #eee
+}
+
+#pricing-page .title {
+    padding: 25px 0 0
+}
+
+#pricing-page .grid {
+    padding: 6px 0
+}
+
+#pricing-page .grid .box {
+    width: 100%!important
+}
+
+#pricing-page .grid .box > div {
+    padding: 4%
+}
+
+#planner-page {
+    padding: 2% 0
+}
+
+#planner-page .ui-highlight {
+    margin: 30px 0 40px
+}
+
+#planner-page .image {
+    max-width: 150px;
+    margin: 0 auto
+}
+
+#planner-page .image img {
+    max-width: 100%
+}
+
+#planner-page > .ui-form {
+    margin: 2% auto;
+    width: 100%
+}
+
+#planner-page > .ui-form .ui-form-input input,
+#planner-page > .ui-form .ui-form-input select {
+    margin-bottom: 20px;
+    padding: 4.2% 2.5%!important;
+    width: 94%;
+    font: 95% Roboto;
+    font-weight: 300;
+    border: 3px solid #c5ccd4
+}
+
+#planner-page > .ui-form .ui-form-input select {
+    width: 100%
+}
+
+.ui-form-submit button {
+    padding: 20px
+}
+
+#footer {
+    padding: 3% 0;
+    font-size: 85%;
+    background: #1f2533
+}
+
+#footer .title {
+    font: 100% Franklin Gothic Heavy;
+    padding-bottom: 10px;
+    color: #fff
+}
+
+#footer li {
+    font-size: 90%;
+    list-style: none;
+    padding: 8px 0
+}
+
+.ui-focalsoft-small-logo {
+    display: none;
+    margin-top: 25px;
+    color: #fff;
+    padding: 13px 0 10px;
+    width: 50px;
+    height: 27px;
+    border-radius: 50%;
+    border: 5px solid #fff
+}
+
+#fs-link {
+    font-size: 80%;
+    padding: 25px 0;
+    background: #191b22
+}
+
+#fs-link,
+#fs-link a {
+    color: #fff
+}
+
+#fs-link a {
+    font-weight: 700
+}
+
+#fs-link a:hover {
+    color: #eee
+}
+
+@media screen and (min-width: 400px) {
+    #footer {
+        font-size: 100%
+    }
+}
+
+#footer .ui-focalsoft-small-logo {
+    float: right
+}
+
+#footer .ui-list-footer ul {
+    width: 20%
+}
+
+#footer .ui-list-footer ul > li a {
+    color: #4C4848
+}
+
+@media screen and (max-width: 350px) {
+    #services-page > .meetup-div > .ui-table .row .block:last-child {
+        font-style: italic;
+        background: #dc4f57
+    }
+}
+
+@media screen and (max-width: 460px) {
+    #services-page > .members-div .image-details > .name {
+        font: 100% Roboto;
+        font-weight: 700
+    }
+    #sponsors-grid > .box {
+        width: 100%!important
+    }
+    #services-page > .meetup-div > .ui-table {
+        max-width: 330px
+    }
+}
+
+@media screen and (min-width: 490px) {
+    .dmsn {
+        max-width: 1300px
+    }
+    #services-page > .meetup-div > .ui-table {
+        max-width: 430px
+    }
+    #footer {
+        padding: 1.2% 0
+    }
+}
+
+@media screen and (min-width: 601px),
+media screen and (max-width: 1000px) {
+    .grid > .box {
+        width: 33.3%!important
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .grid > .box {
+        width: 50%!important
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #menu-section > .dmsn > .btn .ui-ctru-box {
+        padding: 15px 40px
+    }
+    #menu-section > .dmsn > .ui-menu li {
+        padding: 1.8% 8%
+    }
+}
